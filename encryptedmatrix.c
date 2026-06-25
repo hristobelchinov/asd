@@ -1,4 +1,4 @@
-#include "encrypted_matrix.h"
+#include "encryptedmatrix.h"
 
 #include <ctype.h>
 #include <math.h>
