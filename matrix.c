@@ -77,8 +77,3 @@ double determinant(Matrix m){
     }
     return det;
 }
-
-int main(){
-
-    return 0;
-}
