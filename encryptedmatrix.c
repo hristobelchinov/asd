@@ -71,7 +71,7 @@ int saveMatrixEncrypted(const char *filePath, const Matrix *matrix, const char *
             written = snprintf(
                 line+used,
                 sizeof(line)-used,
-                "%g",
+                "%g ",
                 matrix->data[i][j]
             );
 
