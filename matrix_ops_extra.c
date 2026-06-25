@@ -84,3 +84,16 @@ Matrix inverseMatrix(Matrix a){
     return result;
 }
 
+Matrix divideMatrices(Matrix a, Matrix b){
+    Matrix invB = inverseMatrix(b);
+
+    if(isInvalidMatrix(invB)){
+        return emptyMatrix();
+    }
+
+    if(a.cols != invB.rows){
+        return emptyMatrix();
+    }
+
+    return multiply(a, invB);
+}
